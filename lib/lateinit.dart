@@ -1,4 +1,7 @@
 library lateinit;
+export 'constants/app_constants.dart';
+export 'utils/app_utils.dart';
+export 'widgets/app_widgets.dart';
 
 /// A Calculator.
 class Calculator {
