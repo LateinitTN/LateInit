@@ -3,7 +3,7 @@ import '../constants/app_constants.dart';
 
 // ignore: must_be_immutable
 class CardWidget extends StatelessWidget {
-  var child;
+  Widget child;
   Color color;
   double? width;
   double? height;
@@ -16,7 +16,8 @@ class CardWidget extends StatelessWidget {
   double borderSize;
 
   CardWidget(
-      {this.child,
+      {
+      required this.child,
       this.color = Colors.white,
       this.onClick,
       this.radius = LateRadiusSize.normal,

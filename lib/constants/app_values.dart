@@ -1,4 +1,6 @@
 
+import 'package:flutter/material.dart';
+
 class LateIconSize {
   static const double small = 16.0;
   static const double normal = 24.0;
@@ -48,7 +50,7 @@ class LateHeightSize {
   static const double doubleBig = 60.0;
 }
 
-class LateFontSizeSize {
+class LateFontSize {
   static const double verySmall = 10.0;
   static const double small = 12.0;
   static const double normal = 14.0;
@@ -56,4 +58,10 @@ class LateFontSizeSize {
   static const double big = 18.0;
   static const double doubleBig = 20.0;
   static const double veryBig = 22.0;
+}
+
+class LateText {
+  static var textBold = TextStyle(fontSize: LateFontSize.normal, color: Colors.white, decoration: TextDecoration.none);
+  static var textSemiBold = TextStyle(fontSize: LateFontSize.normal, color: Colors.white, decoration: TextDecoration.none);
+  static var textRegular = TextStyle(fontSize: LateFontSize.normal, color: Colors.white, decoration: TextDecoration.none);
 }
