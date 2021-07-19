@@ -5,11 +5,16 @@ import '../constants/app_constants.dart';
 // ignore: must_be_immutable
 class LoadingWidget extends StatelessWidget {
   var color;
-  LoadingWidget({this.color});
+  double height;
+  double width;
+
+  LoadingWidget(
+      {this.color,
+      this.width = LateHeightSize.small,
+      this.height = LateHeightSize.small});
 
   @override
   Widget build(BuildContext context) {
-
     color = color == null ? Colors.black45 : color;
 
     return Stack(
@@ -32,14 +37,15 @@ class LoadingWidget extends StatelessWidget {
               Expanded(
                 child: Center(
                   child: Container(
-                    width: LatePaddingSize.big,
-                    height: LatePaddingSize.big,
+                    width: LateHeightSize.small,
+                    height: LateHeightSize.small,
                     child: ClipOval(
                       child: Container(
                         color: Colors.white,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(color)),
+                          child: CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation<Color>(color)),
                         ),
                       ),
                     ),
