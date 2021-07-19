@@ -37,8 +37,8 @@ class LoadingWidget extends StatelessWidget {
               Expanded(
                 child: Center(
                   child: Container(
-                    width: LateHeightSize.small,
-                    height: LateHeightSize.small,
+                    width: width,
+                    height: height,
                     child: ClipOval(
                       child: Container(
                         color: Colors.white,
